@@ -69,7 +69,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'src/index.html'
         }), 
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['dist']),  //打包前清空
         new webpack.HotModuleReplacementPlugin()
     ]
 }
