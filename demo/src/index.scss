@@ -1,0 +1,42 @@
+@font-face {font-family: "iconfont";
+    src: url('./font/iconfont.eot?t=1582852784083'); /* IE9 */
+    src: url('./font/iconfont.eot?t=1582852784083#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQkAAsAAAAACJwAAAPVAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDFAqEZIQSATYCJAMQCwoABCAFhG0HRBt4BxEVnCvJfhw4bsPK+qXU9pgTVdQU5D8HD/91vvfNvKSjD6sgk/RkCiFdEViRWv0GCAgru7nmwJGaMBHmUb4defSFtH3MX5ofCCMm5ITc/xwubWzrBTK/ZbnMtSzqBRgHFNCet4fwHcidHfup2FYzRLXgPzg5DQEYxMslatdt7EJD4k8SgOjbq0cntIYeOVEq0BA4B1ZKxGwcaMoU5RIwK/t+8ZGSaaDgUPFnNu9epyvV33x8800dXTxa2wSBYD8roK4DFcgFEkTHQbuNWsRzqRj2YEk+cCIRKHt5i4vJUF/5jtJ5U5mCf55w4sstYEsnVHjzMWJBwJuvLCjw5pseFWg5XgOCwAngLyljs/5ONNR0aVlS+vkJDvbWIy3LN21LlLt1Xv0FS2DxoVQDQ1joYWw8IsSYZRENC0Z+dNk2c5A/Af2nbVgyevF6Y+PWMdu6VItsyxXgwRA9lMWHDGPqmrqjGQEbDsPoZna06jIwu0R5vacdjlKsXZccNf1u33bfuuW6c8dz9+7o3++/Nvr6tJtjbgxxL1ixfHOqtXHrylURrbekuUxhYno22bM/wX3qVuKa23XO3k1Ze2fP0dA/g5tcrZW+M+/ch8CLRqndMY3LN/7WuFzj2Nmu6IuBD87lHamVjv07/wlTPQvPLcxZYFZcG76uokn3lO53sbJrpGzrQdENhjS9GbRyQ9WrVfnQG7NUzLHYUrHHYkrtzt4tR0x6VTvm63odjWW9mkpGel+ohW1Ti1q2t5YIrF6vSL1e+3RV1iX0owO7tejewtPCzfgKqw5cqfXjBXxIfPGj1pVa5bH/28/fHl199G0x53+P47bi8wlbeH0jbOLIGuFFpc9nV37uahXgH0mfZwT/AAcD8f3qcuUYKB7ljrOc8vGP8DtE/dKfDgGVf2umBODByGm7oJXwCkFDAbbgaxcwm6Qj8g1SWuKI7xZKGqLBmyzEwAC+7nKAYE/2UIaxySCUYRUolCAOVDRSkRKbCw5MSoMTjWpgkKPeepMQg1ERUgeyTSAQBNoFCv4cBdUl0BcpsT9wCPcHp8CWYPC029GUXr3aMypBC/oDtaHBhSZZ5aUX9FOnuC7KqA/kWIegyC9sp844IO8xJz59KeLAMfVworNh1xGMTA0aSYPIWGUF3YdeKDXUz1ZqYUgRyALaB6gZZOCS9mLV+foL5E06Ck80tNkfEIvq7kEhlTOQZ/nAaniXu0RPXkkIBziM9MCJrKgL4gSMw8MayBCpsCI6qmSilePK0/OV/RPuAAz+ZWSKUIUUDuQmoaXquq2eYqwHjHOSXg2zGQAAAA==') format('woff2'),
+    url('./font/iconfont.woff?t=1582852784083') format('woff'),
+    url('./font/iconfont.ttf?t=1582852784083') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('./font/iconfont.svg?t=1582852784083#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+font-family: "iconfont" !important;
+font-size: 16px;
+font-style: normal;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-auto:before {
+content: "\e6eb";
+}
+
+.icon-all:before {
+content: "\e6ef";
+}
+
+.icon-bussiness-man:before {
+content: "\e6f0";
+}
+    
+
+
+body {
+    .avatar {
+        width: 100px;
+        height: 100px;
+        transform: translate(100px, 100px);
+    }
+}
+
+div:nth-child(odd) {
+    background: blue;
+}
