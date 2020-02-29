@@ -13,7 +13,18 @@
 // import $ from 'jquery'
 // import { ui } from './ui.js'
 import library from 'library-eatanddie-test'
+
 console.log(library.math.add(1,2))
+ 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js').then(registration => {
+            console.log('service-worker registed')
+        }).catch(error => {
+            console.log('service-worker registed error')
+        })
+    })
+}
 
 // ui()
 // const dom = $('<div>')
