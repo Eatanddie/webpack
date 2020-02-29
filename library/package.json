@@ -1,0 +1,17 @@
+{
+  "name": "library-eatanddie-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/library.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}

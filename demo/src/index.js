@@ -12,6 +12,8 @@
 // import _ from 'lodash'
 // import $ from 'jquery'
 // import { ui } from './ui.js'
+import library from 'library-eatanddie-test'
+console.log(library.math.add(1,2))
 
 // ui()
 // const dom = $('<div>')
