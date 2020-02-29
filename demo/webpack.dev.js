@@ -8,13 +8,25 @@ const devConfig = {
         chunkFilename: '[name].chunk.js'
     },
     devServer: {
+        overlay: true,
         contentBase: './dist',
         open: true,
-        port: 8081,
+        port: 8088,
         proxy: {
-            '/api': 'http://localhost:3000'
+            '/react/api': {
+                target: 'https://www.dell-lee.com',
+                secure: false,
+                pathRewrite: {
+                    'header.json': 'demo.json'
+                },
+                changeOrigin: true,
+                // headers: {
+                //     host: ''
+                // }
+            }
         },
         hot: true,
+        historyApiFallback: true,
         // hotOnly: true
     },
     module: {

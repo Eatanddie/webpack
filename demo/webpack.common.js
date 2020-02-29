@@ -1,7 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const devConfig = require('./webpack.dev.js')
@@ -38,7 +37,7 @@ const commonConfig = {
         }, { 
             test: /\.js$/, 
             exclude: /node_modules/, 
-            loader: 'babel-loader',
+            use: ['babel-loader', 'eslint-loader'],
             options: {
                 // presets: [['@babel/preset-env', {
                 //     useBuiltIns: 'usage',
@@ -60,7 +59,6 @@ const commonConfig = {
     },
     plugins: [
         new HtmlWebpackPlugin({ template: 'src/index.html' }), 
-        new CleanWebpackPlugin(),
         new webpack.ProvidePlugin({
             $: 'jquery'
         })

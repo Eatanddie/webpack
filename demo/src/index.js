@@ -5,26 +5,27 @@
 // import createAvatar from './createAvatar.js'
 // import style from './index.scss'
 // import avatar from './avatar.jpg'
-// import React, { Component } from 'react'
-// import ReactDom from 'react-dom'
+import React, { Component } from 'react'
+import ReactDom from 'react-dom'
 // import { add } from './math.js'
 // import './style.css'
 // import _ from 'lodash'
 // import $ from 'jquery'
 // import { ui } from './ui.js'
-import library from 'library-eatanddie-test'
+// import library from 'library-eatanddie-test'
+import axios from 'axios'
 
-console.log(library.math.add(1,2))
+// console.log(library.math.add(1,2))
  
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js').then(registration => {
-            console.log('service-worker registed')
-        }).catch(error => {
-            console.log('service-worker registed error')
-        })
-    })
-}
+// if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', () => {
+//         navigator.serviceWorker.register('./service-worker.js').then(registration => {
+//             console.log('service-worker registed')
+//         }).catch(error => {
+//             console.log('service-worker registed error')
+//         })
+//     })
+// }
 
 // ui()
 // const dom = $('<div>')
@@ -50,16 +51,22 @@ if ('serviceWorker' in navigator) {
 
 // add(1, 2)
 
-// class App extends Component {
-//     render() {
-//         return <div>hello world</div>
-//     }
-// }
+class App extends Component {
+    componentDidMount() {
+        axios.get('/react/api/header.json').then((res) => {
+            console.log(res, '111')
+        })
+    }
 
-// ReactDom.render(
-//     <App />,
-//     document.getElementById('root')
-// )
+    render() {
+        return <div>hello world</div>
+    }
+}
+
+ReactDom.render(
+    <App />,
+    document.getElementById('root')
+)
 
 // const arr = [
 //     new Promise(() => {}),
